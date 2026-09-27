@@ -39,6 +39,7 @@ export default function SearchBar({ onSearch, loading }: SearchBarProps) {
     }
     setFetching(true);
     try {
+      //api to fetch suggestions from nominatim openstreetmap -- latitude and longitude of the place
       const res = await fetch(
         `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&format=json&limit=7&addressdetails=1`,
         { headers: { 'Accept-Language': 'en' } }
