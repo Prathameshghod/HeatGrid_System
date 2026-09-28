@@ -1,6 +1,7 @@
 package com.heatgrid.api.entity;
 
 import jakarta.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
@@ -21,10 +22,10 @@ public class City {
     private String country;
 
     @Column(name = "latitude")
-    private Double latitude;
+    private BigDecimal latitude;
 
     @Column(name = "longitude")
-    private Double longitude;
+    private BigDecimal longitude;
 
     @Column(name = "osm_place_id")
     private Long osmPlaceId;
@@ -63,19 +64,19 @@ public class City {
         this.country = country;
     }
 
-    public Double getLatitude() {
+    public BigDecimal getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(Double latitude) {
+    public void setLatitude(BigDecimal latitude) {
         this.latitude = latitude;
     }
 
-    public Double getLongitude() {
+    public BigDecimal getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(Double longitude) {
+    public void setLongitude(BigDecimal longitude) {
         this.longitude = longitude;
     }
 
