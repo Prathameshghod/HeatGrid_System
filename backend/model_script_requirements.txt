@@ -1,0 +1,12 @@
+earthengine_api==1.7.39
+joblib==1.6.0
+matplotlib==3.11.2
+numpy==2.5.4
+pandas==3.0.6
+protobuf==7.36.2
+pyarrow==23.0.1
+rasterio==1.5.2
+scikit_learn==1.9.1
+scipy==1.18.1
+statsmodels==0.15.0
+xgboost==3.4.1
